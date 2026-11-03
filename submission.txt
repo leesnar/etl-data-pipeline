@@ -1,0 +1,19 @@
+# Siapkan Virtual Environment, di direktori submission-pemda, jalankan:
+python -m venv venv
+
+# Aktifkan virtual environment:
+venv\Scripts\activate
+
+#Instal dependensi dengan menjalankan:
+pip install -r requirements.txt
+
+# Atur environment variable sesuai README.md sebelum menjalankan skrip
+python main.py
+
+# Menjalankan unit test pada folder tests
+python -m pytest tests
+
+# Menjalankan test coverage pada folder tests
+python -m pytest --cov=utils tests/
+
+# Tujuan Google Sheets dikonfigurasi melalui GOOGLE_SHEETS_ID.
